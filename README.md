@@ -1,4 +1,4 @@
-# Ore Abolade — Academic Website
+# Ore Abolade — Website
 
 Personal academic homepage for [o-abolade.github.io](https://o-abolade.github.io/).
 
