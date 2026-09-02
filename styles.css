@@ -51,8 +51,10 @@ h2 { font-size: clamp(45px, 6vw, 72px); letter-spacing: -.035em; }
 .news-list article { border-top: 1px solid var(--line); padding: 22px 0; }
 .news-list time { color: var(--accent); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
 .news-list p { font-family: "Cormorant Garamond", Georgia, serif; font-size: 25px; line-height: 1.25; margin: 12px 0 0; }
-.contact-list { border-top: 1px solid var(--line); display: grid; gap: 20px; padding-top: 26px; }
-.contact-list a { color: var(--ink); display: block; font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(27px, 3.4vw, 42px); line-height: 1.2; text-decoration: none; width: fit-content; }
+.contact-list { border-top: 1px solid var(--line); display: grid; gap: 24px; padding-top: 26px; }
+.contact-item { align-items: baseline; display: flex; flex-wrap: wrap; gap: 8px 14px; }
+.contact-item span { color: var(--muted); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+.contact-list a { color: var(--ink); font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(27px, 3.4vw, 42px); line-height: 1.2; text-decoration: none; }
 .contact-list a:hover, .contact-list a:focus-visible { color: var(--accent); text-decoration: underline; text-underline-offset: 5px; }
 footer { border-top: 1px solid var(--ink); display: grid; font-size: 12px; gap: 20px; grid-template-columns: 1fr 1fr auto; padding-bottom: 42px; padding-top: 30px; }
 footer p { margin: 0; }
