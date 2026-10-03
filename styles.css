@@ -73,12 +73,12 @@ footer p { margin: 0; }
 .operating-model { border-top: 1px solid var(--line); margin: 46px 0 42px; padding-top: 28px; }
 .model-heading { align-items: baseline; display: flex; gap: 18px; justify-content: space-between; }
 .model-kicker { color: var(--accent); font-size: 10px; font-weight: 600; letter-spacing: .13em; margin: 0; text-transform: uppercase; }
-.model-heading h2 { color: var(--paper); font-family: Inter, sans-serif; font-size: 15px; font-weight: 500; margin: 0; }
+.model-heading h2 { color: var(--ink); font-family: Inter, sans-serif; font-size: 15px; font-weight: 500; margin: 0; }
 .model-flow { margin-top: 26px; }
 .model-step { align-items: center; background: color-mix(in srgb, var(--panel) 78%, transparent); border: 1px solid var(--line); display: grid; gap: 18px; grid-template-columns: 38px 1fr; min-height: 84px; padding: 16px 18px; }
 .model-number { color: var(--accent); font-size: 11px; font-weight: 600; letter-spacing: .08em; }
-.model-step h3 { color: var(--paper); font-family: Inter, sans-serif; font-size: 14px; font-weight: 500; margin: 0; }
-.model-step p { color: var(--muted); font-size: 12px; line-height: 1.55; margin: 5px 0 0; }
+.model-step h3 { color: var(--ink); font-family: Inter, sans-serif; font-size: 14px; font-weight: 600; margin: 0; }
+.model-step p { color: #d5dbd3; font-size: 12px; line-height: 1.55; margin: 5px 0 0; }
 .model-connector { height: 32px; margin-left: 36px; position: relative; width: 2px; }
 .model-connector::before { background: var(--line); content: ""; inset: 0; position: absolute; }
 .model-connector::after { animation: model-flow 1.8s linear infinite; color: var(--accent); content: "↓"; font-size: 17px; left: 50%; line-height: 1; position: absolute; top: -2px; transform: translateX(-50%); }
