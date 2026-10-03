@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="RRM-1 is a private research prototype for robot-agnostic embodied reasoning, combining persistent world modeling, structured planning, independent supervision, and embodiment-aware execution.">
+    <meta name="description" content="RRM-1 is a private personal project for robot-agnostic embodied reasoning, combining persistent world modeling, structured planning, independent supervision, and embodiment-aware execution.">
     <meta property="og:title" content="RRM-1: Robotic Reasoning Models for Physical AI — Ore Abolade">
-    <meta property="og:description" content="A private research prototype for robot-agnostic embodied reasoning with world modeling, structured planning, and independent supervision.">
+    <meta property="og:description" content="A private personal project for robot-agnostic embodied reasoning with world modeling, structured planning, and independent supervision.">
     <title>RRM-1: Robotic Reasoning Models for Physical AI — Ore Abolade</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,18 +24,18 @@
     </header>
     <main class="detail">
       <a class="back-link" href="../index.html#projects">← All projects</a>
-      <p class="detail-kicker">Current research project</p>
+      <p class="detail-kicker">Personal project</p>
       <h1>Robotic Reasoning Models for Physical AI</h1>
-      <p class="lede">RRM-1 is a private research prototype for robot-agnostic embodied reasoning, connecting persistent world modeling, structured task planning, independent supervision, and embodiment-aware execution.</p>
+      <p class="lede">RRM-1 is a private personal project for robot-agnostic embodied reasoning, connecting persistent world modeling, structured task planning, independent supervision, and embodiment-aware execution.</p>
       <div class="detail-body">
         <aside class="detail-meta">
           <strong>Focus</strong>Robot-agnostic reasoning · World modeling · Physical AI<br><br>
           <strong>Timeframe</strong>Aug. 2026–Present<br><br>
-          <strong>Status</strong>Private prototype · In active development
+          <strong>Status</strong>Private work · In active development
         </aside>
         <div class="detail-copy">
           <p>RRM-1 is designed to make robot behavior inspectable across the full task loop. Rather than sending a high-level goal directly to a policy, it maintains structured state about objects, relations, actions, and expected effects, then checks proposed actions before execution.</p>
-          <p>Current work emphasizes explicit contracts and replayable evidence: versioned state, bounded planning calls, admission checks, safety gates, and monitored execution traces. This supports careful study of failure modes and recovery behavior while preserving the distinction between controlled evaluation and real-world performance.</p>
+          <p>Current work emphasizes explicit contracts and replayable evidence: versioned state, bounded planning calls, admission checks, safety gates, and monitored execution traces. The architecture is designed to evaluate pluggable models, reasoning modules, and embodiment adapters through stable interfaces rather than binding the system to one model or robot.</p>
 
           <section class="operating-model" aria-labelledby="rrm-model-title">
             <div class="model-heading">
@@ -71,7 +71,7 @@
             <p class="model-caption">Only admitted actions cross into execution; new evidence informs subsequent verification, recovery, or replanning.</p>
           </section>
 
-          <p>The broader research question is whether separating state modeling, task reasoning, and supervision can make embodied behavior more traceable, recoverable, and transferable across robot embodiments. Cross-embodiment performance remains a research objective to evaluate, not a claim of the current prototype.</p>
+          <p>The broader goal is to determine whether separating state modeling, task reasoning, and supervision can make embodied behavior more traceable, recoverable, and transferable across robot embodiments. Cross-embodiment performance remains an objective to evaluate, not a claim of the current implementation.</p>
           <p class="detail-note">This is an intentionally high-level public overview. The implementation, experimental setup, evaluation details, and current results remain private while the research develops.</p>
         </div>
       </div>
