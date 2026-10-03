@@ -48,6 +48,7 @@ h2 { font-size: clamp(45px, 6vw, 72px); letter-spacing: -.035em; }
 .project-status b { font-size: 14px; font-weight: 400; margin-left: 5px; }
 .project-row h3 { font-size: clamp(25px, 3vw, 39px); line-height: 1.12; }
 .project-row small { color: var(--muted); display: block; font-size: 13px; line-height: 1.45; margin-top: 9px; }
+.project-timeframe { color: var(--accent); display: block; font-size: 11px; font-weight: 600; letter-spacing: .08em; margin-top: 9px; text-transform: uppercase; }
 .news-list article { border-top: 1px solid var(--line); padding: 22px 0; }
 .news-list time { color: var(--accent); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
 .news-list p { font-family: "Cormorant Garamond", Georgia, serif; font-size: 25px; line-height: 1.25; margin: 12px 0 0; }
