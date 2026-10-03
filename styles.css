@@ -22,7 +22,7 @@ main, footer { margin: 0 auto; max-width: 1180px; padding-left: 32px; padding-ri
 .hero-copy { min-width: 0; }
 .portrait { border: 1px solid var(--line); height: 290px; margin: 0 0 4px; overflow: hidden; width: 230px; }
 .portrait img { display: block; height: 100%; object-fit: cover; object-position: 50% 16%; width: 100%; }
-.eyebrow, .section-number, .group-label, .detail-kicker { color: var(--accent); font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+.eyebrow, .group-label, .detail-kicker, .academic-label { color: var(--accent); font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
 h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; line-height: .98; margin: 0; }
 h1 { font-size: clamp(76px, 13vw, 158px); letter-spacing: -.045em; }
 h2 { font-size: clamp(45px, 6vw, 72px); letter-spacing: -.035em; }
@@ -30,29 +30,31 @@ h2 { font-size: clamp(45px, 6vw, 72px); letter-spacing: -.035em; }
 .intro { color: var(--muted); max-width: 680px; }
 .text-link, .back-link { display: inline-block; font-size: 13px; font-weight: 600; margin-top: 24px; text-decoration: none; }
 .text-link span { margin-left: 8px; }
-.section { border-top: 1px solid var(--line); padding: 92px 0 110px; }
+.section { padding: 92px 0 110px; }
 .two-column { display: grid; gap: 60px; grid-template-columns: minmax(240px, .8fr) 1.2fr; }
-.section-number { margin: 0 0 14px; }
-.prose { color: #e5e6e1; font-size: 18px; max-width: 680px; }
-.prose p:first-child { margin-top: 0; }
+.academic-journey { color: #e5e6e1; font-size: 15px; line-height: 1.65; margin-top: 28px; max-width: 700px; }
+.academic-label { margin: 0 0 8px; }
+.academic-journey p:last-child { margin: 0; }
 .section-heading { align-items: end; display: flex; justify-content: space-between; margin-bottom: 52px; }
 .section-heading > p, .group-intro { color: var(--muted); font-size: 14px; margin: 0 0 7px; max-width: 330px; }
 .project-group + .project-group { margin-top: 76px; }
+.project-group.github-work { margin-top: 0; }
+.github-work .project-list { border-top: 0; }
 .group-label { margin: 0 0 18px; }
 .group-intro { margin-bottom: 26px; max-width: 540px; }
 .project-list { border-top: 1px solid var(--ink); }
-.project-row { align-items: center; border-bottom: 1px solid var(--line); display: grid; gap: 24px; grid-template-columns: 44px 1fr auto; padding: 27px 0; text-decoration: none; transition: color .16s ease, padding .16s ease; }
+.project-row { align-items: center; border-bottom: 1px solid var(--line); display: grid; gap: 24px; grid-template-columns: 1fr auto; padding: 27px 0; text-decoration: none; transition: color .16s ease, padding .16s ease; }
 .project-row:hover, .project-row:focus-visible { color: var(--accent); padding-left: 8px; }
-.project-index, .project-status { color: var(--muted); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.project-status { color: var(--muted); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
 .project-row:hover .project-status, .project-row:focus-visible .project-status { color: var(--accent); }
 .project-status b { font-size: 14px; font-weight: 400; margin-left: 5px; }
 .project-row h3 { font-size: clamp(25px, 3vw, 39px); line-height: 1.12; }
 .project-row small { color: var(--muted); display: block; font-size: 13px; line-height: 1.45; margin-top: 9px; }
 .project-timeframe { color: var(--accent); display: block; font-size: 11px; font-weight: 600; letter-spacing: .08em; margin-top: 9px; text-transform: uppercase; }
-.news-list article { border-top: 1px solid var(--line); padding: 22px 0; }
+.news-list article { padding: 0; }
 .news-list time { color: var(--accent); font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
 .news-list p { font-family: "Cormorant Garamond", Georgia, serif; font-size: 25px; line-height: 1.25; margin: 12px 0 0; }
-.contact-list { border-top: 1px solid var(--line); display: grid; gap: 24px; padding-top: 26px; }
+.contact-list { display: grid; gap: 24px; padding-top: 0; }
 .contact-item { align-items: baseline; display: flex; flex-wrap: wrap; gap: 8px 14px; }
 .contact-item span { color: var(--muted); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
 .contact-list a { color: var(--ink); font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(27px, 3.4vw, 42px); line-height: 1.2; text-decoration: none; }
@@ -98,8 +100,8 @@ footer p { margin: 0; }
   .two-column, .detail-body { grid-template-columns: 1fr; }
   .section { padding: 68px 0 78px; }
   .section-heading { align-items: start; flex-direction: column; gap: 24px; }
-  .project-row { align-items: start; grid-template-columns: 30px 1fr; }
-  .project-status { grid-column: 2; }
+  .project-row { align-items: start; grid-template-columns: 1fr; }
+  .project-status { grid-column: 1; }
   footer { grid-template-columns: 1fr; }
   .detail { padding-top: 35px; }
   .detail h1 { margin-top: 48px; }
