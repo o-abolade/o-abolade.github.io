@@ -64,9 +64,10 @@ footer p { margin: 0; }
 
 .detail { max-width: 880px; min-height: calc(100vh - 148px); padding-bottom: 120px; padding-top: 58px; }
 .detail h1 { font-size: clamp(46px, 6.5vw, 76px); line-height: 1.02; margin-top: 58px; max-width: 1000px; }
-.xolem-title { align-items: center; display: flex; gap: 22px; margin-top: 58px; }
+.visually-hidden { clip: rect(0 0 0 0); clip-path: inset(50%); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; }
+.xolem-title { align-items: center; display: flex; margin-top: 58px; }
 .detail .xolem-title h1 { margin-top: 0; }
-.xolem-mark { color: var(--accent); flex: 0 0 auto; height: 54px; width: 104px; }
+.xolem-mark { color: var(--accent); flex: 0 0 auto; height: 78px; width: 150px; }
 .detail .lede { margin-top: 34px; }
 .detail-body { border-top: 1px solid var(--line); display: grid; gap: 48px; grid-template-columns: minmax(180px, .55fr) 1.45fr; margin-top: 70px; padding-top: 28px; }
 .detail-meta { color: var(--muted); font-size: 12px; line-height: 1.7; }
@@ -80,6 +81,17 @@ footer p { margin: 0; }
 .model-kicker { color: var(--accent); font-size: 10px; font-weight: 600; letter-spacing: .13em; margin: 0; text-transform: uppercase; }
 .model-heading h2 { color: var(--ink); font-family: Inter, sans-serif; font-size: 15px; font-weight: 500; margin: 0; }
 .model-flow { margin-top: 26px; }
+.model-intro { color: var(--muted); font-size: 14px; line-height: 1.65; margin: 16px 0 0; }
+.model-variants { display: grid; gap: 20px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 28px; }
+.model-variant { background: color-mix(in srgb, var(--panel) 55%, transparent); border: 1px solid var(--line); padding: 22px; }
+.model-variant > h3 { color: var(--ink); font-family: Inter, sans-serif; font-size: 15px; font-weight: 600; line-height: 1.35; margin: 8px 0 0; }
+.model-variant .model-flow { margin-top: 20px; }
+.model-variant .model-step { gap: 12px; grid-template-columns: 30px 1fr; min-height: 72px; padding: 13px 14px; }
+.model-variant .model-step h4 { color: #ffffff; font-family: Inter, sans-serif; font-size: 12px; font-weight: 700; line-height: 1.3; margin: 0; }
+.model-variant .model-step p { color: #d5dbd3; font-size: 11px; line-height: 1.5; margin: 4px 0 0; }
+.model-variant .model-connector { height: 22px; margin-left: 28px; }
+.model-variant .model-connector::after { font-size: 15px; }
+.model-variant-note { color: var(--muted); font-size: 12px; line-height: 1.6; margin: 18px 0 0; }
 .model-step { align-items: center; background: color-mix(in srgb, var(--panel) 78%, transparent); border: 1px solid var(--line); display: grid; gap: 18px; grid-template-columns: 38px 1fr; min-height: 84px; padding: 16px 18px; }
 .model-number { color: var(--accent); font-size: 11px; font-weight: 600; letter-spacing: .08em; }
 .model-step h3 { color: #ffffff; font-family: Inter, sans-serif; font-size: 14px; font-weight: 700; margin: 0; }
@@ -110,8 +122,9 @@ footer p { margin: 0; }
   footer { grid-template-columns: 1fr; }
   .detail { padding-top: 35px; }
   .detail h1 { margin-top: 48px; }
-  .xolem-title { gap: 14px; margin-top: 48px; }
-  .xolem-mark { height: 42px; width: 81px; }
+  .xolem-title { margin-top: 48px; }
+  .xolem-mark { height: 62px; width: 119px; }
+  .model-variants { grid-template-columns: 1fr; }
   .detail-body { gap: 26px; margin-top: 50px; }
 }
 
