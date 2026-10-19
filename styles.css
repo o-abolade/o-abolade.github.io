@@ -64,6 +64,9 @@ footer p { margin: 0; }
 
 .detail { max-width: 880px; min-height: calc(100vh - 148px); padding-bottom: 120px; padding-top: 58px; }
 .detail h1 { font-size: clamp(46px, 6.5vw, 76px); line-height: 1.02; margin-top: 58px; max-width: 1000px; }
+.xolem-title { align-items: center; display: flex; gap: 22px; margin-top: 58px; }
+.detail .xolem-title h1 { margin-top: 0; }
+.xolem-mark { color: var(--accent); flex: 0 0 auto; height: 54px; width: 104px; }
 .detail .lede { margin-top: 34px; }
 .detail-body { border-top: 1px solid var(--line); display: grid; gap: 48px; grid-template-columns: minmax(180px, .55fr) 1.45fr; margin-top: 70px; padding-top: 28px; }
 .detail-meta { color: var(--muted); font-size: 12px; line-height: 1.7; }
@@ -107,6 +110,8 @@ footer p { margin: 0; }
   footer { grid-template-columns: 1fr; }
   .detail { padding-top: 35px; }
   .detail h1 { margin-top: 48px; }
+  .xolem-title { gap: 14px; margin-top: 48px; }
+  .xolem-mark { height: 42px; width: 81px; }
   .detail-body { gap: 26px; margin-top: 50px; }
 }
 
